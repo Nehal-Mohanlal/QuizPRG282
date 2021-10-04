@@ -26,11 +26,24 @@ namespace QuizPRG282
 
         private void btnRead_Click(object sender, EventArgs e)
         {
-            string path = @"C:\Users\nehal\source\repos\QuizPRG282\QuizPRG282\bin\Debug\PRG282Quiz.txt"; 
-            StreamReader sr = new Streamreader(path); 
-            string fileread = sr.
-            listbox1.Text = fileread.toString(); 
+            string path = @"C:\Users\nehal\source\repos\QuizPRG282\QuizPRG282\bin\Debug\PRG282Quiz.txt";
+
+            StreamReader sr = new StreamReader(path);
+            string data = sr.ReadToEnd();
+            richTextBox1.Text = data;
             sr.Close(); 
+
+
+            //using (StreamReader sr = File.OpenText(path))
+            //{
+            //    string s = "";
+            //    while ((s = sr.ReadLine()) != null)
+            //    {
+            //        richTextBox1.Text = s; 
+
+            //    }
+            //}
+            
             
             
         }

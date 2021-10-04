@@ -31,14 +31,15 @@ namespace QuizPRG282
         {
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.btnRead = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(35, 41);
+            this.listBox1.Location = new System.Drawing.Point(12, 184);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(447, 160);
+            this.listBox1.Size = new System.Drawing.Size(126, 160);
             this.listBox1.TabIndex = 0;
             // 
             // btnRead
@@ -51,11 +52,20 @@ namespace QuizPRG282
             this.btnRead.UseVisualStyleBackColor = true;
             this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(171, 12);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(493, 173);
+            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.Text = "";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btnRead);
             this.Controls.Add(this.listBox1);
             this.Name = "Form1";
@@ -69,6 +79,7 @@ namespace QuizPRG282
 
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button btnRead;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 

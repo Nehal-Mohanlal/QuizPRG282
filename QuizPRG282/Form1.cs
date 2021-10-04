@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO; 
 
 namespace QuizPRG282
 {
@@ -25,7 +26,13 @@ namespace QuizPRG282
 
         private void btnRead_Click(object sender, EventArgs e)
         {
-
+            string path = @"C:\Users\nehal\source\repos\QuizPRG282\QuizPRG282\bin\Debug\PRG282Quiz.txt"; 
+            StreamReader sr = new Streamreader(path); 
+            string fileread = sr.
+            listbox1.Text = fileread.toString(); 
+            sr.Close(); 
+            
+            
         }
     }
 }
